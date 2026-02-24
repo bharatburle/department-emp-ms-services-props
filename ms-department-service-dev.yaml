@@ -2,6 +2,10 @@ Spring:
   zipkin:
     base-url: http://localhost:9411
     enabled: true
+  datasource:
+    url: jdbc:oracle:thin:@//172.16.3.1:1521/orcl19c
+    username: DCBPAYPRO_AUTHMATRIX
+    password: DCBPAYPRO_AUTHMATRIX
 
 eureka:
   client:
@@ -9,10 +13,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
-datasource:
-  url: jdbc:oracle:thin:@//172.16.3.1:1521/orcl19c
-  username: DCBPAYPRO_AUTHMATRIX
-  password: DCBPAYPRO_AUTHMATRIX
+
 management:
     endpoints:
       web:
