@@ -1,1 +1,5 @@
-
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//172.16.3.1:1521/orcl19c
+    username: DCBPAYPRO_AUTHMATRIX
+    password: DCBPAYPRO_AUTHMATRIX
